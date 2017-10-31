@@ -1,0 +1,20 @@
+sudo: off
+
+branches:
+  only:
+    - master
+
+env:
+  global:
+    - SOURCE_DIR="dist"
+    - DESTINATION_PATH="https://haosblob.blob.core.windows.net/test-travis/"
+
+deploy:
+  provider: azure_blob
+  edge:
+    source: howlowck/dpl
+    branch: azure_blob
+  accessKey: $BLOB_ACCESS_KEY
+  sourceDir: $SOURCE_DIR
+  destinationUrl: $DESTINATION_PATH
+  
