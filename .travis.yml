@@ -1,4 +1,4 @@
-sudo: off
+sudo: required
 
 language: node_js
 
