@@ -16,7 +16,6 @@ deploy:
   edge:
     source: howlowck/dpl
     branch: azure-blob
-  accessKey: $BLOB_ACCESS_KEY
   sourceDir: $SOURCE_DIR
   destinationUrl: $DESTINATION_PATH
   
