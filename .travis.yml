@@ -6,14 +6,9 @@ branches:
   only:
     - master
 
-env:
-  global:
-    - SOURCE_DIR="dist"
-
 deploy:
   provider: azure_blob
   edge:
     source: howlowck/dpl
     branch: azure-blob
-  sourceDir: $SOURCE_DIR
   
